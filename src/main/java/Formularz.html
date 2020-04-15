@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<div class="layout">
+    <body>
+    <h1>Rejestracja</h1>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Imię</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Wpisz imię">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Nazwisko</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Wpisz nazwisko">
+    </div>
+    Płeć:<br>
+    <input type="radio" name="gender" value="female">Kobieta<br>
+    <input type="radio" name="gender" value="male">Mężczyzna<br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Adres email:</label>
+        <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="Wpisz email">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Hasło:</label>
+        <input type="password" class="form-control" id="formGroupExampleInput4" placeholder="Wpisz hasło">
+    </div>
+    <div class="form-row">
+
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">Miasto</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom04">Województwo</label>
+            <select class="custom-select" id="validationCustom04" required>
+                <option selected disabled value="">Wybierz...</option>
+                <option>Opolskie<br></option>
+                <option>Dolnoslaskie<br></option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Kod pocztowy</label>
+            <input type="text" class="form-control" maxlength="5" id="validationCustom05" required>
+        </div>
+    </div>
+    <input type="checkbox" name="hobby" value="computers"> Akceptuję <a href="https://javastart.pl/static/regulamin"
+                                                                        target="_blank">regulamin</a><br>
+    <input type="checkbox" name="hobby" value="animals" checked> Wyrażam zgodę na otrzymywanie informacji marketingowych<br>
+    <button type="button" class="btn btn-primary">Rejestruj</button>
+    </body>
+</div>
+</html>
